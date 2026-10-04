@@ -25,7 +25,7 @@ public class InventoryController {
 
     @PostMapping("/inventory/itemImg")
     public String itemImage(@RequestParam ("file")MultipartFile file) {
-        String folder ="";
+        String folder ="src/main/Upload/";
         String itemImage = file.getOriginalFilename();
         try {
             File uploadDir = new File(folder);
